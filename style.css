@@ -2,6 +2,7 @@ body {
     background-color: #D5E1EF;
     font-family: 'Outfit', sans-serif;
     text-align: center;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,6 +29,7 @@ p {
 .card img {
     max-width: 288px;
     max-height: 288px;
+    border-radius: 20px;
 }
 
 .card-text {

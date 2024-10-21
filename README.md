@@ -19,9 +19,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-First trial[First trial](screenshots/Screenshot1.png)
+First trial
+![First trial](screenshots/Screenshot1.png)
 
-Second trial[Second trial - Tips on the Discord](screenshots/Screenshot2.png)
+Second trial
+![Second trial - Tips on the Discord](screenshots/Screenshot2.png)
 
 ### Links
 

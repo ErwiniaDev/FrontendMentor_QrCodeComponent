@@ -22,8 +22,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 First trial
 ![First trial](screenshots/Screenshot1.png)
 
-Second trial
+Second trial (after reading the other posts)
 ![Second trial - Tips on the Discord](screenshots/Screenshot2.png)
+
+Third trial (after reading feedbacks)
+![Third trial - Feedbacks]
 
 ### Links
 
@@ -43,10 +46,12 @@ Second trial
 - rem unities / responsive
 - HTML' structure details for accessibility
 - Figma
+- Full modern reset
+- @font-face
 
 ### Continued development
 
-I'd like to find a solution to avoid the position absolute/fixed for the footer.
+I'd like to find a solution to avoid the position absolute/fixed for the footer => remove the fixed position and let it at the bottom of the card
 
 ### Useful resources
 
@@ -59,3 +64,9 @@ I'd like to find a solution to avoid the position absolute/fixed for the footer.
 ## Acknowledgments
 
 Thank you the Front-end Mentor community!
+
+In particular:
+@grace-snow
+@Stroudy
+@Fable54321
+for your feedbacks!

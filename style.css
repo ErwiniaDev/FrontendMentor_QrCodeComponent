@@ -1,3 +1,104 @@
+/*CSS Reset from https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*Paddings and margins are considered in the max-size*/
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    min-height: 100svh;
+    /*For browsers that support this unity*/
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    /*line-height: 1.5; Default = 1.2*/
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default 
+article>*+* {
+    margin-top: 1em;
+}*/
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+/*
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+*/
+
+/* Fonts */
+/* outfit-regular - latin */
+/*@font-face {
+    font-display: swap;*/
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+/*    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2');*/
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+/*}*/
+
+
+/* General CSS */
+
 body {
     background-color: #D5E1EF;
     font-family: 'Outfit', sans-serif;
@@ -6,6 +107,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px; /* Pour que la carte ne touche jamais le bord de l'écran */
 }
 
 h2 {
@@ -13,15 +115,21 @@ h2 {
     font-size: 1.4rem; /* 1.5rem = 24px */
     line-height: 1.2;
     letter-spacing: 0;
+    color: #1F314F;
 }
 
 p {
     font-size: 0.95rem; /* 1rem = 16px */
     line-height: 1.4;
     letter-spacing: 0.01rem;
+    color: #68778D;
 }
 
-main {
+img {
+    border-radius: 10px;
+}
+
+.card {
     max-width: 20rem; /* 320px */
     background-color: white;
     padding: 1rem 1rem 2.5rem 1rem;
@@ -32,10 +140,6 @@ main {
     gap: 1.5rem;
 }
 
-img {
-    border-radius: 10px;
-}
-
 .card-text {
     display: flex;
     flex-direction: column;
@@ -44,8 +148,8 @@ img {
 }
 
 .attribution {
-    position: fixed;
+    /*position: fixed; > On le laisse sous la carte, pas besoin qu'il soit en bas de page
     left: 0;
-    bottom: 1rem;
+    bottom: 1rem;*/
     width: 100%;
 }
